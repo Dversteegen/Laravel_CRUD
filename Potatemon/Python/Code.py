@@ -59,4 +59,4 @@ while True:
         print("Failed to retrieve state from the database.")
 
     # Add a delay to control the frequency of database queries
-    time.sleep(5)  # Adjust the delay as needed
+    time.sleep(0.1)  # Adjust the delay as needed
