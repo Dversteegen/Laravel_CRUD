@@ -1,0 +1,23 @@
+.roundedBox {
+    background-color: #DDDDDD;
+    border-radius: 25px;
+}
+
+#device_group {
+    display: flex;
+}
+
+.label_group {
+    margin-left: 5px;
+}
+
+.label_group label {
+    padding-left: 3px;
+}
+
+.colorBox {
+    float: right;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
