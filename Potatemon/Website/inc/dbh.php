@@ -7,7 +7,7 @@
 
 function ConnectToDatabase()
 {  
-  $servername = "192.168.101.47";
+  $servername = "172.20.10.7";
   $username = "testuser";
   $password = "dany7828";
 

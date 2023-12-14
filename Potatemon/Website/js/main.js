@@ -55,11 +55,38 @@ function showSensorValues(values) {
   $("#sensor_table tbody").append(renderTemplate);
 }
 
+function getSensorDanishValues() {
+  $.ajax({
+    type: "POST",
+    url: "inc/functions.php",
+    dataType: "json",
+    data: {
+      functionName: "GetSensorDanishValues",
+    },
+
+    complete: function (response) {
+      showSensorDanishValues(response.responseJSON);
+    },
+  });
+}
+
+/// 
+function showSensorDanishValues(values) {  
+
+  values = roundNumbers(values);
+  var template = $("#template_table_danish_sensors").html();
+  var renderTemplate = Mustache.render(template, values);
+  $("#sensor_table_danish tbody").append(renderTemplate);  
+}
+
 ///
 function roundNumbers(values) {
   $.each(values, function (index, value) {
     value.avg_temperature = (Math.round(value.avg_temperature * 100) / 100).toFixed(2);
     value.avg_humidity = (Math.round(value.avg_humidity * 100) / 100).toFixed(2);
+
+    value.avg_temperatureDanish = (Math.round(value.avg_temperatureDanish * 100) / 100).toFixed(2);
+    value.avg_humidityDanish = (Math.round(value.avg_humidityDanish * 100) / 100).toFixed(2);
   });
 
   return values;
