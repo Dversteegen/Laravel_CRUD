@@ -15,7 +15,7 @@ include "inc/layout.php";
         integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M=" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <title id="deviceNameTitle_led">deviceName</title>
+    <title id="deviceNameTitle_motor">deviceName</title>
 </head>
 
 <script>
@@ -34,18 +34,22 @@ window.onload = (event) => {
     ?>
 
     <div class="container-fluid">
-        <div class="d-flex justify-content-center mt-3 fs-3" id="deviceName_led">
+        <div class="d-flex justify-content-center mt-3 fs-3" id="deviceName_motor">
             deviceName
         </div>
-        
+
         <div class="row mt-3">
             <div class="col d-flex justify-content-center">
                 <div class="roundedBox p-3 border shadow border-secondary">
                     <div class="fs-4">
-                        Status: <span id="label_led">status</span> <br>
+                        Status: <span id="label_motor">status</span> <br>
                     </div>
                 </div>
             </div>
+        </div>
+        <br>
+        <div class="col d-flex justify-content-center">
+            <img src="assets/Motor.jpg" class="img-fluid rounded w-25 border shadow border-secondary" alt="Motor">
         </div>
     </div>
 

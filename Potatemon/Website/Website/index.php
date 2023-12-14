@@ -39,81 +39,51 @@ window.onload = (event) => {
 
             <div class="col d-flex justify-content-center">
                 <div class="card border-2 shadow border-secondary" style="width: 18.75rem;">
-                    <img src="assets/TemperatureImage.jpg" class="card-img-top" alt="TemperatureImage">
+                    <img src="assets/WhiteLed.jpg" class="card-img-top" alt="WhiteLed">
                     <div class="card-body">
                         <h5 class="card-title" id="deviceName_led">Card title</h5>
 
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up bulk of the card's content.
+                            Arduino White LED
                         </p>
+                        <br>
 
-                        <a href="deviceSite_label_led.php" class="btn btn-primary">Device Info</a>
+                        <a href="deviceSite_label_led.php" class="btn btn-primary position-absolute bottom-0 start-0 m-3">Device Info</a>
                     </div>
                 </div>
             </div>
             
             <div class="col d-flex justify-content-center">
                 <div class="card border-2 shadow border-secondary" style="width: 18.75rem;">
-                    <img src="assets/TemperatureImage.jpg" class="card-img-top" alt="TemperatureImage">
+                    <img src="assets/RGBModule.jpg" class="card-img-top" alt="RGBModule">
                     <div class="card-body">
                         <h5 class="card-title" id="deviceName_rgb">Card title</h5>
 
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up bulk of the card's content.
+                            Arduino RGB Module
                         <p>
+                        <br>
 
-                        <a href="deviceSite_label_rgb.php" class="btn btn-primary">Device Info</a>
+                        <a href="deviceSite_label_rgb.php" class="btn btn-primary position-absolute bottom-0 start-0 m-3">Device Info</a>
                     </div>
                 </div>       
             </div>
 
             <div class="col d-flex justify-content-center">
                 <div class="card border-2 shadow border-secondary" style="width: 18.75rem;">
-                    <img src="assets/TemperatureImage.jpg" class="card-img-top" alt="TemperatureImage">
+                    <img src="assets/Motor.jpg" class="card-img-top" alt="Motor">
                     <div class="card-body">
                         <h5 class="card-title" id="deviceName_motor">Card title</h5>
 
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up bulk of the card's content.
+                            Arduino Motor
                         <p>
+                        <br>
 
-                        <a href="deviceSite_label_motor.php" class="btn btn-primary">Device Info</a>   
+                        <a href="deviceSite_label_motor.php" class="btn btn-primary position-absolute bottom-0 start-0 m-3">Device Info</a>   
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row mt-3">
-            <div class="col d-flex justify-content-center">
-                
-                <div class="card-title">
-                    <table id="sensor_table">
-                        <thead>
-                            <tr>
-                                <th style="text-align:center;">Date</th>
-                                <th style="text-align:center;">Temperature</th>
-                                <th style="text-align:center;">Humidity</th>
-                            </tr>
-                        </thead>
-
-                        <tbody id="sensor_tbody">
-
-                        </tbody>
-
-                    </table>
-
-                     <!-- Template for crypto table --> 
-                    <template id="template_table_sensors">
-                        {{#.}}
-                        <tr>
-                            <td style="text-align:center;">{{date}}</td>
-                            <td style="text-align:center;">{{avg_temperature}}</td>
-                            <td style="text-align:center;">{{avg_humidity}}</td>
-                            {{/.}}
-                    </template>
-                </div>
-            </div>     
         </div>
     </div>
 
